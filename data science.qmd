@@ -3,7 +3,7 @@ title: "Data Science - First Impressions"
 format: html
 editor: visual
 editor_options: 
-  chunk_output_type: console
+  chunk_output_type: inline
 ---
 
 This document is submitted by Theresa Scocca as Homework 1 in ST 558 - Data Science for Statisticians.
