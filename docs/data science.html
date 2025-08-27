@@ -138,13 +138,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="data-science-write-up">Data Science Write-up</h2>
 <p>Reflections on data science are provided below in the answers to 3 questions:</p>
 <ol type="1">
-<li><p>What do you think being a data scientist is about?</p>
-<p>asdfasdj</p></li>
-<li><p>What differences/similarities do you see between data scientists and statisticians?</p>
-<p>sdfasdf</p></li>
-<li><p>How do you view yourself in relation to these two areas? ’</p>
-<p>asdfasdf</p></li>
+<li>What do you think being a data scientist is about?</li>
 </ol>
+<p>Being a data scientist is about taking a set of often noisy or complex data and organizing and analyzing it to summarize findings. Data scientists are thinking about what knowledge they can extract from an often-large dataset and how that can inform next steps, for example, in business, seeing what has been happening that may not be easily visible or modeled because the data are numerous, complex, noisy, etc. Data scientists also often need to be able to communicate their conclusions to a more diverse set of stakeholders who may not have an extensive background in data and analysis. They are thinking about how what they are doing with the data can be applied to some larger problem, and it might be a diverse group of people thinking about that problem.</p>
+<ol start="2" type="1">
+<li>What differences/similarities do you see between data scientists and statisticians?</li>
+</ol>
+<p>Both data scientists and statisticians have understanding of data, data summarization and analysis, and they use some kind of programming language to interact with whatever their dataset is. However, statisticians are often using a smaller body of data to make inferences that can be applied to a larger set of data. Data scientists are often looking at a large amount of data to see what is happening within it, and using that to inform either asking or answering questions. Statisticians often start out with a good bit of predictability about their datasets, whereas data scientists are often faced with large datasets from which to make some sort of sense or draw some conclusion.</p>
+<ol start="3" type="1">
+<li>How do you view yourself in relation to these two areas? ’</li>
+</ol>
+<p>I work in clinical research as a scientist, primarily right now on federal projects. It is an interesting spot because federal studies often have endpoints that are more exploratory than clinical trials in the commercial sector that are specifically designed to support the development program for an indication. Federal trials often collect a larger amount of data… sometimes things that aren’t truly needed, but beyond that, there is often a large amount of mechanistic or complex assessment data. Studies are often in a rarer disease, specific subset of participants, or have a more mechanistic question in mind. Also, the typical results if often a manuscript(s) rather than a formal change in a label – often the questions and group of participants are too complex for a label change to be possible, and it is more about how we might influence more direct clinical practice. All of this means the statisticians, programmers, and scientists particularly on federal studies are often dealing with more and noisier data that are harder to push into a strict, standardized format. Having capabilities to work in less predictable datasets can be helpful. Federal studies are also often looking for informative ways to represent the results of studies and in a way that shows applicability or may show less obvious patterns. Though we primarily use SAS, some of our newer statisticians an scientists are using R for some things, especially graphical representations. As a scientist in this field, the better I can understand various ways of organizing or looking at the data, the more I can bring to the table, and the more chance we have of a study being informative in some way, even if it wasn’t the way we originally anticipated.</p>
 </section>
 <section id="petal-width-in-iris" class="level2">
 <h2 class="anchored" data-anchor-id="petal-width-in-iris">Petal Width in iris</h2>
@@ -152,21 +156,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">density</span>(iris<span class="sc">$</span>Petal.Width)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>The class, type, and structure of object y are as follows: Class:</p>
+<p>The class, type, and structure of object y are as follows:</p>
+<p><strong>Class:</strong></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "density"</code></pre>
 </div>
 </div>
-<p>Type:</p>
+<p><strong>Type:</strong></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "list"</code></pre>
 </div>
 </div>
-<p>Structure:</p>
+<p><strong>Structure:</strong></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -182,12 +187,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  - attr(*, "class")= chr "density"</code></pre>
 </div>
 </div>
+<p><strong>Plot:</strong></p>
 <p>I then used the plot function on y:</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="data-science_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="data-science_files/figure-html/my_plot-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>

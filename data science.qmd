@@ -14,15 +14,15 @@ Reflections on data science are provided below in the answers to 3 questions:
 
 1.  What do you think being a data scientist is about?
 
-    asdfasdj
+Being a data scientist is about taking a set of often noisy or complex data and organizing and analyzing it to summarize findings. Data scientists are thinking about what knowledge they can extract from an often-large dataset and how that can inform next steps, for example, in business, seeing what has been happening that may not be easily visible or modeled because the data are numerous, complex, noisy, etc. Data scientists also often need to be able to communicate their conclusions to a more diverse set of stakeholders who may not have an extensive background in data and analysis. They are thinking about how what they are doing with the data can be applied to some larger problem, and it might be a diverse group of people thinking about that problem.
 
 2.  What differences/similarities do you see between data scientists and statisticians?
 
-    sdfasdf
+Both data scientists and statisticians have understanding of data, data summarization and analysis, and they use some kind of programming language to interact with whatever their dataset is. However, statisticians are often using a smaller body of data to make inferences that can be applied to a larger set of data. Data scientists are often looking at a large amount of data to see what is happening within it, and using that to inform either asking or answering questions. Statisticians often start out with a good bit of predictability about their datasets, whereas data scientists are often faced with large datasets from which to make some sort of sense or draw some conclusion.
 
 3.  How do you view yourself in relation to these two areas? '
 
-    asdfasdf
+I work in clinical research as a scientist, primarily right now on federal projects. It is an interesting spot because federal studies often have endpoints that are more exploratory than clinical trials in the commercial sector that are specifically designed to support the development program for an indication. Federal trials often collect a larger amount of data… sometimes things that aren’t truly needed, but beyond that, there is often a large amount of mechanistic or complex assessment data. Studies are often in a rarer disease, specific subset of participants, or have a more mechanistic question in mind. Also, the typical results if often a manuscript(s) rather than a formal change in a label – often the questions and group of participants are too complex for a label change to be possible, and it is more about how we might influence more direct clinical practice. All of this means the statisticians, programmers, and scientists particularly on federal studies are often dealing with more and noisier data that are harder to push into a strict, standardized format. Having capabilities to work in less predictable datasets can be helpful. Federal studies are also often looking for informative ways to represent the results of studies and in a way that shows applicability or may show less obvious patterns. Though we primarily use SAS, some of our newer statisticians an scientists are using R for some things, especially graphical representations. As a scientist in this field, the better I can understand various ways of organizing or looking at the data, the more I can bring to the table, and the more chance we have of a study being informative in some way, even if it wasn’t the way we originally anticipated.
 
 ## Petal Width in iris
 
@@ -32,27 +32,31 @@ I created an R object, y, that is the density estimate of the petal widths in th
 y <- density(iris$Petal.Width)
 ```
 
-The class, type, and structure of object y are as follows: Class:
+The class, type, and structure of object y are as follows:
+
+**Class:**
 
 ```{r}
 class(y)
 ```
 
-Type:
+**Type:**
 
 ```{r}
 typeof(y)
 ```
 
-Structure:
+**Structure:**
 
 ```{r}
 str(y)
 ```
 
+**Plot:**
+
 I then used the plot function on y:
 
-```{r}
+```{r my_plot}
 #| echo: false
 plot(y, main = "Plot of the Density Estimate of the Petal Widths in iris")
 ```
