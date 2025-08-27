@@ -1,0 +1,58 @@
+---
+title: "Data Science - First Impressions"
+format: html
+editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+This document is submitted by Theresa Scocca as Homework 1 in ST 558 - Data Science for Statisticians.
+
+## Data Science Write-up
+
+Reflections on data science are provided below in the answers to 3 questions:
+
+1.  What do you think being a data scientist is about?
+
+    asdfasdj
+
+2.  What differences/similarities do you see between data scientists and statisticians?
+
+    sdfasdf
+
+3.  How do you view yourself in relation to these two areas? '
+
+    asdfasdf
+
+## Petal Width in iris
+
+I created an R object, y, that is the density estimate of the petal widths in the iris dataset, using this code:
+
+```{r}
+y <- density(iris$Petal.Width)
+```
+
+The class, type, and structure of object y are as follows: Class:
+
+```{r}
+class(y)
+```
+
+Type:
+
+```{r}
+typeof(y)
+```
+
+Structure:
+
+```{r}
+str(y)
+```
+
+I then used the plot function on y:
+
+```{r}
+#| echo: false
+plot(y, main = "Plot of the Density Estimates of Petal Widths in iris")
+```

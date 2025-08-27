@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "data science.html",
+    "href": "data science.html",
+    "title": "Data Science - First Impressions",
+    "section": "",
+    "text": "This document is submitted by Theresa Scocca as Homework 1 in ST 558 - Data Science for Statisticians."
+  },
+  {
+    "objectID": "data science.html#data-science-write-up",
+    "href": "data science.html#data-science-write-up",
+    "title": "Data Science - First Impressions",
+    "section": "Data Science Write-up",
+    "text": "Data Science Write-up\nReflections on data science are provided below in the answers to 3 questions:\n\nWhat do you think being a data scientist is about?\nasdfasdj\nWhat differences/similarities do you see between data scientists and statisticians?\nsdfasdf\nHow do you view yourself in relation to these two areas? ’\nasdfasdf"
+  },
+  {
+    "objectID": "data science.html#petal-width-in-iris",
+    "href": "data science.html#petal-width-in-iris",
+    "title": "Data Science - First Impressions",
+    "section": "Petal Width in iris",
+    "text": "Petal Width in iris\nI created an R object, y, that is the density estimate of the petal widths in the iris dataset, using this code:\n\ny &lt;- density(iris$Petal.Width)\n\nThe class, type, and structure of object y are as follows: Class:\n\nclass(y)\n\n[1] \"density\"\n\n\nType:\n\ntypeof(y)\n\n[1] \"list\"\n\n\nStructure:\n\nstr(y)\n\nList of 8\n $ x         : num [1:512] -0.656 -0.648 -0.64 -0.633 -0.625 ...\n $ y         : num [1:512] 0.00161 0.00178 0.00197 0.00217 0.00239 ...\n $ bw        : num 0.252\n $ n         : int 150\n $ old.coords: logi FALSE\n $ call      : language density.default(x = iris$Petal.Width)\n $ data.name : chr \"iris$Petal.Width\"\n $ has.na    : logi FALSE\n - attr(*, \"class\")= chr \"density\"\n\n\nI then used the plot function on y:"
+  }
+]
