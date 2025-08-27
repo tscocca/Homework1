@@ -54,5 +54,5 @@ I then used the plot function on y:
 
 ```{r}
 #| echo: false
-plot(y, main = "Plot of the Density Estimates of Petal Widths in iris")
+plot(y, main = "Plot of the Density Estimate of the Petal Widths in iris")
 ```
